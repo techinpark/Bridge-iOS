@@ -23,6 +23,14 @@
 		845E016C1E86D0B4009F2059 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E016B1E86D0B4009F2059 /* MainTableViewCell.m */; };
 		845E01701E86DA9B009F2059 /* RecordDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E016F1E86DA9B009F2059 /* RecordDetailViewController.m */; };
 		845E01741E86DDA7009F2059 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01731E86DDA7009F2059 /* Utils.m */; };
+		845E017A1E86EBC3009F2059 /* Spoqa Han Sans Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845E01761E86EBAC009F2059 /* Spoqa Han Sans Bold.ttf */; };
+		845E017B1E86EBC3009F2059 /* Spoqa Han Sans Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845E01771E86EBAC009F2059 /* Spoqa Han Sans Light.ttf */; };
+		845E017C1E86EBC3009F2059 /* Spoqa Han Sans Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845E01781E86EBAC009F2059 /* Spoqa Han Sans Regular.ttf */; };
+		845E017D1E86EBC3009F2059 /* Spoqa Han Sans Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845E01791E86EBAC009F2059 /* Spoqa Han Sans Thin.ttf */; };
+		845E01821E86F513009F2059 /* AlaramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01801E86F513009F2059 /* AlaramViewController.m */; };
+		845E01831E86F513009F2059 /* AlaramViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E01811E86F513009F2059 /* AlaramViewController.xib */; };
+		845E01871E86FE80009F2059 /* AddReceiveMoneyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01861E86FE7F009F2059 /* AddReceiveMoneyVC.m */; };
+		845E018A1E87160E009F2059 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01891E87160E009F2059 /* LeftMenuTableViewCell.m */; };
 		87A02D57738F8368A272F170 /* libPods-Bridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +68,17 @@
 		845E016F1E86DA9B009F2059 /* RecordDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordDetailViewController.m; sourceTree = "<group>"; };
 		845E01721E86DDA7009F2059 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		845E01731E86DDA7009F2059 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		845E01761E86EBAC009F2059 /* Spoqa Han Sans Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Bold.ttf"; sourceTree = "<group>"; };
+		845E01771E86EBAC009F2059 /* Spoqa Han Sans Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Light.ttf"; sourceTree = "<group>"; };
+		845E01781E86EBAC009F2059 /* Spoqa Han Sans Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Regular.ttf"; sourceTree = "<group>"; };
+		845E01791E86EBAC009F2059 /* Spoqa Han Sans Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Thin.ttf"; sourceTree = "<group>"; };
+		845E017F1E86F513009F2059 /* AlaramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlaramViewController.h; sourceTree = "<group>"; };
+		845E01801E86F513009F2059 /* AlaramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlaramViewController.m; sourceTree = "<group>"; };
+		845E01811E86F513009F2059 /* AlaramViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlaramViewController.xib; sourceTree = "<group>"; };
+		845E01851E86FE7F009F2059 /* AddReceiveMoneyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReceiveMoneyVC.h; sourceTree = "<group>"; };
+		845E01861E86FE7F009F2059 /* AddReceiveMoneyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReceiveMoneyVC.m; sourceTree = "<group>"; };
+		845E01881E87160E009F2059 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
+		845E01891E87160E009F2059 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
 		BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,6 +114,7 @@
 		82A9082A1E864BBF00876963 = {
 			isa = PBXGroup;
 			children = (
+				845E01751E86EBA5009F2059 /* font */,
 				82A908351E864BBF00876963 /* Bridge */,
 				82A908341E864BBF00876963 /* Products */,
 				D2744430E00F9F28AAE94E0F /* Pods */,
@@ -160,7 +180,12 @@
 		82BEA3B71E86857E00CEEF79 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				824F2F041E86F31500CD29AC /* push */,
+=======
+				845E01841E86FDCF009F2059 /* register */,
+				845E017E1E86F4FE009F2059 /* alram */,
+>>>>>>> 9c49101e1d8ed0c9f405c316005de84005675c7f
 				845E01231E86BB22009F2059 /* login */,
 				845E016D1E86DA61009F2059 /* detail */,
 				845E011D1E86A1CE009F2059 /* base */,
@@ -178,6 +203,8 @@
 				845E01171E869C22009F2059 /* MainViewController.m */,
 				845E016A1E86D0B4009F2059 /* MainTableViewCell.h */,
 				845E016B1E86D0B4009F2059 /* MainTableViewCell.m */,
+				845E01881E87160E009F2059 /* LeftMenuTableViewCell.h */,
+				845E01891E87160E009F2059 /* LeftMenuTableViewCell.m */,
 			);
 			name = main;
 			sourceTree = "<group>";
@@ -224,6 +251,36 @@
 				845E01731E86DDA7009F2059 /* Utils.m */,
 			);
 			name = common;
+			sourceTree = "<group>";
+		};
+		845E01751E86EBA5009F2059 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				845E01761E86EBAC009F2059 /* Spoqa Han Sans Bold.ttf */,
+				845E01771E86EBAC009F2059 /* Spoqa Han Sans Light.ttf */,
+				845E01781E86EBAC009F2059 /* Spoqa Han Sans Regular.ttf */,
+				845E01791E86EBAC009F2059 /* Spoqa Han Sans Thin.ttf */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
+		845E017E1E86F4FE009F2059 /* alram */ = {
+			isa = PBXGroup;
+			children = (
+				845E017F1E86F513009F2059 /* AlaramViewController.h */,
+				845E01801E86F513009F2059 /* AlaramViewController.m */,
+				845E01811E86F513009F2059 /* AlaramViewController.xib */,
+			);
+			name = alram;
+			sourceTree = "<group>";
+		};
+		845E01841E86FDCF009F2059 /* register */ = {
+			isa = PBXGroup;
+			children = (
+				845E01851E86FE7F009F2059 /* AddReceiveMoneyVC.h */,
+				845E01861E86FE7F009F2059 /* AddReceiveMoneyVC.m */,
+			);
+			name = register;
 			sourceTree = "<group>";
 		};
 		D2744430E00F9F28AAE94E0F /* Pods */ = {
@@ -302,6 +359,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845E017A1E86EBC3009F2059 /* Spoqa Han Sans Bold.ttf in Resources */,
+				845E017B1E86EBC3009F2059 /* Spoqa Han Sans Light.ttf in Resources */,
+				845E01831E86F513009F2059 /* AlaramViewController.xib in Resources */,
+				845E017C1E86EBC3009F2059 /* Spoqa Han Sans Regular.ttf in Resources */,
+				845E017D1E86EBC3009F2059 /* Spoqa Han Sans Thin.ttf in Resources */,
 				845E012B1E86BB55009F2059 /* LoginViewController.xib in Resources */,
 				82A908461E864BBF00876963 /* LaunchScreen.storyboard in Resources */,
 				82A908431E864BBF00876963 /* Assets.xcassets in Resources */,
@@ -365,17 +427,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				845E012A1E86BB55009F2059 /* LoginViewController.m in Sources */,
+				845E018A1E87160E009F2059 /* LeftMenuTableViewCell.m in Sources */,
 				845E01741E86DDA7009F2059 /* Utils.m in Sources */,
 				82BEA3BB1E8686EE00CEEF79 /* APIModel.m in Sources */,
 				824F2F071E86F33600CD29AC /* PushRecivedViewController.m in Sources */,
 				82A9083E1E864BBF00876963 /* ViewController.m in Sources */,
 				845E016C1E86D0B4009F2059 /* MainTableViewCell.m in Sources */,
 				845E01701E86DA9B009F2059 /* RecordDetailViewController.m in Sources */,
+				845E01821E86F513009F2059 /* AlaramViewController.m in Sources */,
 				82A9083B1E864BBF00876963 /* AppDelegate.m in Sources */,
 				845E01181E869C22009F2059 /* MainViewController.m in Sources */,
 				845E011B1E869EB0009F2059 /* LeftMenuViewController.m in Sources */,
 				845E01201E86A1DA009F2059 /* BaseViewController.m in Sources */,
 				82A908381E864BBF00876963 /* main.m in Sources */,
+				845E01871E86FE80009F2059 /* AddReceiveMoneyVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

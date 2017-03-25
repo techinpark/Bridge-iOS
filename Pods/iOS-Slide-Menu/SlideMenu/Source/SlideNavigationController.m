@@ -50,9 +50,9 @@ NSString  *const SlideNavigationControllerDidReveal = @"SlideNavigationControlle
 #define MENU_SLIDE_ANIMATION_DURATION .3
 #define MENU_SLIDE_ANIMATION_OPTION UIViewAnimationOptionCurveEaseOut
 #define MENU_QUICK_SLIDE_ANIMATION_DURATION .18
-#define MENU_IMAGE @"menu-button"
-#define MENU_SHADOW_RADIUS 10
-#define MENU_SHADOW_OPACITY 1
+#define MENU_IMAGE @"menu"
+//#define MENU_SHADOW_RADIUS 10
+//#define MENU_SHADOW_OPACITY 1
 #define MENU_DEFAULT_SLIDE_OFFSET 60
 #define MENU_FAST_VELOCITY_FOR_SWIPE_FOLLOW_DIRECTION 1200
 #define STATUS_BAR_HEIGHT 20
@@ -326,7 +326,21 @@ static SlideNavigationController *singletonInstance;
 - (void)setEnableShadow:(BOOL)enable
 {
 	_enableShadow = enable;
+<<<<<<< HEAD
 	
+=======
+
+    //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:(41/255.0) green:(130/255.0) blue:(200/255.0) alpha:1.0f]];
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+    [self.navigationController.navigationBar setBackgroundImage:nil
+    forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setShadowImage:[UIImage new]];
+
+>>>>>>> 9c49101e1d8ed0c9f405c316005de84005675c7f
 	if (enable)
 	{
 		self.view.layer.shadowColor = [UIColor darkGrayColor].CGColor;
@@ -445,8 +459,17 @@ static SlideNavigationController *singletonInstance;
 	}
 	else
 	{
-		UIImage *image = [UIImage imageNamed:MENU_IMAGE];
-        return [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:selector];
+		//UIImage *image = [UIImage imageNamed:MENU_IMAGE];
+        //return [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:selector];
+        
+        UIButton *btnLeftNavi = [UIButton buttonWithType:UIButtonTypeCustom];
+        btnLeftNavi.bounds = CGRectMake(5.0f, 0, 30.0f, 30.0f);
+        [btnLeftNavi addTarget:self action:@selector(toggleLeftMenu) forControlEvents:UIControlEventTouchUpInside];
+        [btnLeftNavi setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
+        [btnLeftNavi setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        UIBarButtonItem *barBtnLeftNavi = [[UIBarButtonItem alloc] initWithCustomView:btnLeftNavi];
+        return barBtnLeftNavi;
+        //self.navigationItem.leftBarButtonItem = barBtnLeftNavi;
 	}
 }
 
