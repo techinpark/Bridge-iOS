@@ -28,7 +28,7 @@
     [button setImage:[UIImage imageNamed:@"left-arrow"] forState:UIControlStateNormal];
     [button addTarget:[SlideNavigationController sharedInstance] action:@selector(closePage:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
+    self.navigationController.navigationItem.leftBarButtonItem = leftBarButtonItem;
     [self.navigationController.navigationBar
      setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     //self.navigationItem.rightBarButtonItem = barBtnRightNavi;

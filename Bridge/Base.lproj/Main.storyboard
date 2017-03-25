@@ -20,7 +20,7 @@
         <scene sceneID="QCK-iu-6HT">
             <objects>
                 <navigationController id="6no-IU-kYl" customClass="SlideNavigationController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IVq-Yu-02W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IVq-Yu-02W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -35,7 +35,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -332,7 +332,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJp-VS-3WO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="639.375" y="-10.56338028169014"/>
-            <point key="canvasLocation" x="-83.200000000000003" y="-8.0959520239880067"/>
         </scene>
         <!--Record Detail View Controller-->
         <scene sceneID="MnO-fL-vD7">
@@ -375,7 +374,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZX-sE-sMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-646.39999999999998" y="630.58470764617698"/>
->>>>>>> 9c49101e1d8ed0c9f405c316005de84005675c7f
+        </scene>
+        <!--Request Receive MoneyVC-->
+        <scene sceneID="qmw-6n-zCX">
+            <objects>
+                <viewController storyboardIdentifier="RequestReceiveMoneyVC" id="PWG-NF-ude" customClass="RequestReceiveMoneyVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7rV-7S-inN"/>
+                        <viewControllerLayoutGuide type="bottom" id="jN5-0O-9KZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ci-Pi-Ztp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zw2-Cl-d6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="651"/>
+        </scene>
+        <!--Request Sending MoneyVC-->
+        <scene sceneID="QmX-oz-Tog">
+            <objects>
+                <viewController storyboardIdentifier="RequestSendingMoneyVC" id="j6E-C1-LkX" customClass="RequestSendingMoneyVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VWf-JP-mgc"/>
+                        <viewControllerLayoutGuide type="bottom" id="W2p-CE-aCK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="waH-Hv-L9C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMI-tt-R2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="651"/>
         </scene>
         <!--Left Menu View Controller-->
         <scene sceneID="qev-Op-8II">
@@ -440,18 +474,18 @@
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="leftMenuCell" id="ou7-t2-3NL" customClass="LeftMenuTableViewCell">
                                         <rect key="frame" x="0.0" y="200" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ou7-t2-3NL" id="4LY-Kg-hSc">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="ou7-t2-3NL" id="4LY-Kg-hSc">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="YzL-Dd-CTP">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="YzL-Dd-CTP">
                                                     <rect key="frame" x="29" y="14" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="8nD-rc-Wf0"/>
                                                         <constraint firstAttribute="height" constant="30" id="AZd-c8-uEX"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최윤정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7k-zc-4yv">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="최윤정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7k-zc-4yv">
                                                     <rect key="frame" x="80" y="19" width="150" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="hO9-Gj-9ha"/>
@@ -490,6 +524,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwv-QD-PW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-645.60000000000002" y="1156.3718140929536"/>
+        </scene>
+        <!--My Trade InquireVC-->
+        <scene sceneID="yac-ct-zeh">
+            <objects>
+                <viewController storyboardIdentifier="MyTradeInquireVC" id="FVq-Gh-XhM" customClass="MyTradeInquireVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fdb-dQ-ZOU"/>
+                        <viewControllerLayoutGuide type="bottom" id="rYJ-Ra-YoF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BxV-xq-UvV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPz-aG-bwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="1306"/>
         </scene>
     </scenes>
     <resources>

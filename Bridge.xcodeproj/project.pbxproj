@@ -31,6 +31,10 @@
 		845E01831E86F513009F2059 /* AlaramViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E01811E86F513009F2059 /* AlaramViewController.xib */; };
 		845E01871E86FE80009F2059 /* AddReceiveMoneyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01861E86FE7F009F2059 /* AddReceiveMoneyVC.m */; };
 		845E018A1E87160E009F2059 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01891E87160E009F2059 /* LeftMenuTableViewCell.m */; };
+		845E018E1E872552009F2059 /* RequestReceiveMoneyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E018D1E872552009F2059 /* RequestReceiveMoneyVC.m */; };
+		845E01911E87261B009F2059 /* RequestSendingMoneyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01901E87261B009F2059 /* RequestSendingMoneyVC.m */; };
+		845E01961E8726FB009F2059 /* MyTradeInquireVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01951E8726FB009F2059 /* MyTradeInquireVC.m */; };
+		845E01981E8727B6009F2059 /* SendRequestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E01971E8727B6009F2059 /* SendRequestView.xib */; };
 		87A02D57738F8368A272F170 /* libPods-Bridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +83,13 @@
 		845E01861E86FE7F009F2059 /* AddReceiveMoneyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReceiveMoneyVC.m; sourceTree = "<group>"; };
 		845E01881E87160E009F2059 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
 		845E01891E87160E009F2059 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
+		845E018C1E872552009F2059 /* RequestReceiveMoneyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestReceiveMoneyVC.h; sourceTree = "<group>"; };
+		845E018D1E872552009F2059 /* RequestReceiveMoneyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestReceiveMoneyVC.m; sourceTree = "<group>"; };
+		845E018F1E87261B009F2059 /* RequestSendingMoneyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestSendingMoneyVC.h; sourceTree = "<group>"; };
+		845E01901E87261B009F2059 /* RequestSendingMoneyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestSendingMoneyVC.m; sourceTree = "<group>"; };
+		845E01941E8726FB009F2059 /* MyTradeInquireVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTradeInquireVC.h; sourceTree = "<group>"; };
+		845E01951E8726FB009F2059 /* MyTradeInquireVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTradeInquireVC.m; sourceTree = "<group>"; };
+		845E01971E8727B6009F2059 /* SendRequestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendRequestView.xib; sourceTree = "<group>"; };
 		BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +125,7 @@
 		82A9082A1E864BBF00876963 = {
 			isa = PBXGroup;
 			children = (
+				845E01971E8727B6009F2059 /* SendRequestView.xib */,
 				845E01751E86EBA5009F2059 /* font */,
 				82A908351E864BBF00876963 /* Bridge */,
 				82A908341E864BBF00876963 /* Products */,
@@ -180,6 +192,7 @@
 		82BEA3B71E86857E00CEEF79 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				845E018B1E8724D1009F2059 /* side menu */,
 				824F2F041E86F31500CD29AC /* push */,
 				845E01841E86FDCF009F2059 /* register */,
 				845E017E1E86F4FE009F2059 /* alram */,
@@ -280,6 +293,19 @@
 			name = register;
 			sourceTree = "<group>";
 		};
+		845E018B1E8724D1009F2059 /* side menu */ = {
+			isa = PBXGroup;
+			children = (
+				845E018C1E872552009F2059 /* RequestReceiveMoneyVC.h */,
+				845E018D1E872552009F2059 /* RequestReceiveMoneyVC.m */,
+				845E018F1E87261B009F2059 /* RequestSendingMoneyVC.h */,
+				845E01901E87261B009F2059 /* RequestSendingMoneyVC.m */,
+				845E01941E8726FB009F2059 /* MyTradeInquireVC.h */,
+				845E01951E8726FB009F2059 /* MyTradeInquireVC.m */,
+			);
+			name = "side menu";
+			sourceTree = "<group>";
+		};
 		D2744430E00F9F28AAE94E0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +384,7 @@
 			files = (
 				845E017A1E86EBC3009F2059 /* Spoqa Han Sans Bold.ttf in Resources */,
 				845E017B1E86EBC3009F2059 /* Spoqa Han Sans Light.ttf in Resources */,
+				845E01981E8727B6009F2059 /* SendRequestView.xib in Resources */,
 				845E01831E86F513009F2059 /* AlaramViewController.xib in Resources */,
 				845E017C1E86EBC3009F2059 /* Spoqa Han Sans Regular.ttf in Resources */,
 				845E017D1E86EBC3009F2059 /* Spoqa Han Sans Thin.ttf in Resources */,
@@ -425,10 +452,12 @@
 			files = (
 				845E012A1E86BB55009F2059 /* LoginViewController.m in Sources */,
 				845E018A1E87160E009F2059 /* LeftMenuTableViewCell.m in Sources */,
+				845E01911E87261B009F2059 /* RequestSendingMoneyVC.m in Sources */,
 				845E01741E86DDA7009F2059 /* Utils.m in Sources */,
 				82BEA3BB1E8686EE00CEEF79 /* APIModel.m in Sources */,
 				824F2F071E86F33600CD29AC /* PushRecivedViewController.m in Sources */,
 				82A9083E1E864BBF00876963 /* ViewController.m in Sources */,
+				845E01961E8726FB009F2059 /* MyTradeInquireVC.m in Sources */,
 				845E016C1E86D0B4009F2059 /* MainTableViewCell.m in Sources */,
 				845E01701E86DA9B009F2059 /* RecordDetailViewController.m in Sources */,
 				845E01821E86F513009F2059 /* AlaramViewController.m in Sources */,
@@ -438,6 +467,7 @@
 				845E01201E86A1DA009F2059 /* BaseViewController.m in Sources */,
 				82A908381E864BBF00876963 /* main.m in Sources */,
 				845E01871E86FE80009F2059 /* AddReceiveMoneyVC.m in Sources */,
+				845E018E1E872552009F2059 /* RequestReceiveMoneyVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

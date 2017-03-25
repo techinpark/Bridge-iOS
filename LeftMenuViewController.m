@@ -84,26 +84,29 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone"
+	UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
 															 bundle: nil];
 	
 	UIViewController *vc ;
 	
-	switch (indexPath.row)
-	{
+	switch (indexPath.row) {
 		case 0:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"HomeViewController"];
+			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"MainViewController"];
 			break;
 		case 1:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ProfileViewController"];
+			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"RequestReceiveMoneyVC"];
 			break;
 		case 2:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"FriendsViewController"];
+			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"RequestSendingMoneyVC"];
 			break;
-		case 3:
-			[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
-			[[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
-			return;
+        case 3:
+            vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"MyTradeInquireVC"];
+            break;
+            
+		case 4:
+			//[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+			//[[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
+			//return;
 			break;
 	}
 	

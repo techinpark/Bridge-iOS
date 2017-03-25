@@ -453,13 +453,12 @@ static SlideNavigationController *singletonInstance;
         
         UIButton *btnLeftNavi = [UIButton buttonWithType:UIButtonTypeCustom];
         btnLeftNavi.bounds = CGRectMake(5.0f, 0, 30.0f, 30.0f);
+        [btnLeftNavi addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
         //[btnLeftNavi addTarget:self action:@selector(toggleLeftMenu) forControlEvents:UIControlEventTouchUpInside];
         [btnLeftNavi setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
         [btnLeftNavi setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         UIBarButtonItem *barBtnLeftNavi = [[UIBarButtonItem alloc] initWithCustomView:btnLeftNavi];
-        
         return barBtnLeftNavi;
-
 	}
 }
 
