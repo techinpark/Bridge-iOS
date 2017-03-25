@@ -13,6 +13,7 @@
 		82A908411E864BBF00876963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A9083F1E864BBF00876963 /* Main.storyboard */; };
 		82A908431E864BBF00876963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A908421E864BBF00876963 /* Assets.xcassets */; };
 		82A908461E864BBF00876963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A908441E864BBF00876963 /* LaunchScreen.storyboard */; };
+		82BEA3BB1E8686EE00CEEF79 /* APIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BEA3B91E8686EE00CEEF79 /* APIModel.m */; };
 		87A02D57738F8368A272F170 /* libPods-Bridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,10 @@
 		82A908421E864BBF00876963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82A908451E864BBF00876963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82A908471E864BBF00876963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82BEA3B81E8686EE00CEEF79 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Define.h; path = Model/Define.h; sourceTree = SOURCE_ROOT; };
+		82BEA3B91E8686EE00CEEF79 /* APIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIModel.m; path = Model/APIModel.m; sourceTree = SOURCE_ROOT; };
+		82BEA3BA1E8686EE00CEEF79 /* APIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIModel.h; path = Model/APIModel.h; sourceTree = SOURCE_ROOT; };
+		82BEA3BC1E868AE900CEEF79 /* Bridge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bridge.entitlements; sourceTree = "<group>"; };
 		BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,6 +78,10 @@
 		82A908351E864BBF00876963 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
+				82BEA3BC1E868AE900CEEF79 /* Bridge.entitlements */,
+				82BEA3B71E86857E00CEEF79 /* Controller */,
+				82BEA3B61E86857900CEEF79 /* View */,
+				82BEA3B51E86857300CEEF79 /* Model */,
 				82A908391E864BBF00876963 /* AppDelegate.h */,
 				82A9083A1E864BBF00876963 /* AppDelegate.m */,
 				82A9083C1E864BBF00876963 /* ViewController.h */,
@@ -92,6 +101,30 @@
 				82A908371E864BBF00876963 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82BEA3B51E86857300CEEF79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82BEA3B81E8686EE00CEEF79 /* Define.h */,
+				82BEA3B91E8686EE00CEEF79 /* APIModel.m */,
+				82BEA3BA1E8686EE00CEEF79 /* APIModel.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		82BEA3B61E86857900CEEF79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82BEA3B71E86857E00CEEF79 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		D2744430E00F9F28AAE94E0F /* Pods */ = {
@@ -139,6 +172,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = U6GQL8JQMT;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -226,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82BEA3BB1E8686EE00CEEF79 /* APIModel.m in Sources */,
 				82A9083E1E864BBF00876963 /* ViewController.m in Sources */,
 				82A9083B1E864BBF00876963 /* AppDelegate.m in Sources */,
 				82A908381E864BBF00876963 /* main.m in Sources */,
@@ -347,6 +386,7 @@
 			baseConfigurationReference = 70383086423FECD7C2C13F9E /* Pods-Bridge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Bridge/Bridge.entitlements;
 				DEVELOPMENT_TEAM = U6GQL8JQMT;
 				INFOPLIST_FILE = Bridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -360,6 +400,7 @@
 			baseConfigurationReference = 803AB0CDEE588460801FEB3B /* Pods-Bridge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Bridge/Bridge.entitlements;
 				DEVELOPMENT_TEAM = U6GQL8JQMT;
 				INFOPLIST_FILE = Bridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -387,6 +428,7 @@
 				82A9084C1E864BBF00876963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
