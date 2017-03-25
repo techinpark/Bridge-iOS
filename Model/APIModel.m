@@ -13,6 +13,43 @@
 #pragma mark -
 #pragma mark 기본 요청 API
 
+
+-(NSDictionary *)moneyTransfer:(NSString *)me toUserid:(NSString *)toUserid money:(NSString *)money {
+    
+    NSString *reqURL = [NSString stringWithFormat:@"/user/%@/transfer",me];
+    return [self request:reqURL params:@{@"toUserid":toUserid,
+                                  @"money":money}];
+    
+}
+
+-(NSDictionary *)moneyBalance:(NSString *)userId {
+    NSString *reqURL = [NSString stringWithFormat:@"/user/%@/balance",userId];
+    return [self request:reqURL params:nil];
+}
+
+
+-(NSDictionary *)moneyReceived:(NSString *)userId {
+    NSString *reqURL = [NSString stringWithFormat:@"/user/%@/from/received",userId];
+    return [self request:reqURL params:nil];
+    
+}
+-(NSDictionary *)moneyFromPending:(NSString *)userId {
+    NSString *reqURL = [NSString stringWithFormat:@"/user/%@/from/pending",userId];
+    return [self request:reqURL params:nil];
+}
+
+-(NSDictionary *)moneySentTo:(NSString *)userId {
+    NSString *reqURL = [NSString stringWithFormat:@"/user/%@/to/sent",userId];
+    return [self request:reqURL params:nil];
+}
+
+-(NSDictionary *)moneyPendingTo:(NSString *)userId {
+    NSString *reqURL = [NSString stringWithFormat:@"/user/%@/to/pending",userId];
+    return [self request:reqURL params:nil];
+}
+
+
+
 -(NSDictionary *)request:(NSString *)api params:(NSDictionary *)params {
     
     NSString *url = [NSString stringWithFormat:@"%@%@",BASE_API_URL,api];

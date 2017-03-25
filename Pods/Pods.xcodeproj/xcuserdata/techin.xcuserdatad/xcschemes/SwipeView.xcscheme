@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9C623D1AF8229419BA603B3C66BE24B9'
-               BlueprintName = 'Reachability'
+               BlueprintIdentifier = '3122FE82D5E049B554D28CA403B04E2C'
+               BlueprintName = 'SwipeView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libReachability.a'>
+               BuildableName = 'libSwipeView.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

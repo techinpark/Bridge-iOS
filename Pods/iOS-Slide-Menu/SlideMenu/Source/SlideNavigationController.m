@@ -323,31 +323,23 @@ static SlideNavigationController *singletonInstance;
 	return (self.horizontalLocation == 0) ? NO : YES;
 }
 
-- (void)setEnableShadow:(BOOL)enable {
+- (void)setEnableShadow:(BOOL)enable
+{
 	_enableShadow = enable;
-
-    //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:(41/255.0) green:(130/255.0) blue:(200/255.0) alpha:1.0f]];
-    
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.navigationController.view.backgroundColor = [UIColor clearColor];
-    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
-    [self.navigationController.navigationBar setBackgroundImage:nil
-    forBarMetrics:UIBarMetricsDefault];
-
+	
 	if (enable)
 	{
-		//self.view.layer.shadowColor = [UIColor darkGrayColor].CGColor;
-		//self.view.layer.shadowRadius = MENU_SHADOW_RADIUS;
-		//self.view.layer.shadowOpacity = MENU_SHADOW_OPACITY;
-		//self.view.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.view.bounds].CGPath;
-		//self.view.layer.shouldRasterize = YES;
-		//self.view.layer.rasterizationScale = [UIScreen mainScreen].scale;
+		self.view.layer.shadowColor = [UIColor darkGrayColor].CGColor;
+		self.view.layer.shadowRadius = MENU_SHADOW_RADIUS;
+		self.view.layer.shadowOpacity = MENU_SHADOW_OPACITY;
+		self.view.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.view.bounds].CGPath;
+		self.view.layer.shouldRasterize = YES;
+		self.view.layer.rasterizationScale = [UIScreen mainScreen].scale;
 	}
 	else
 	{
-		//self.view.layer.shadowOpacity = 0;
-		//self.view.layer.shadowRadius = 0;
+		self.view.layer.shadowOpacity = 0;
+		self.view.layer.shadowRadius = 0;
 	}
 }
 
