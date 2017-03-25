@@ -16,6 +16,12 @@
 		82BEA3BB1E8686EE00CEEF79 /* APIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BEA3B91E8686EE00CEEF79 /* APIModel.m */; };
 		845E01181E869C22009F2059 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01171E869C22009F2059 /* MainViewController.m */; };
 		845E011B1E869EB0009F2059 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E011A1E869EB0009F2059 /* LeftMenuViewController.m */; };
+		845E01201E86A1DA009F2059 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E011F1E86A1DA009F2059 /* BaseViewController.m */; };
+		845E012A1E86BB55009F2059 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01281E86BB55009F2059 /* LoginViewController.m */; };
+		845E012B1E86BB55009F2059 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E01291E86BB55009F2059 /* LoginViewController.xib */; };
+		845E016C1E86D0B4009F2059 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E016B1E86D0B4009F2059 /* MainTableViewCell.m */; };
+		845E01701E86DA9B009F2059 /* RecordDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E016F1E86DA9B009F2059 /* RecordDetailViewController.m */; };
+		845E01741E86DDA7009F2059 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01731E86DDA7009F2059 /* Utils.m */; };
 		87A02D57738F8368A272F170 /* libPods-Bridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +46,17 @@
 		845E01171E869C22009F2059 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		845E01191E869EB0009F2059 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftMenuViewController.h; path = ../LeftMenuViewController.h; sourceTree = "<group>"; };
 		845E011A1E869EB0009F2059 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftMenuViewController.m; path = ../LeftMenuViewController.m; sourceTree = "<group>"; };
+		845E011E1E86A1DA009F2059 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		845E011F1E86A1DA009F2059 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		845E01271E86BB55009F2059 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		845E01281E86BB55009F2059 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		845E01291E86BB55009F2059 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		845E016A1E86D0B4009F2059 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		845E016B1E86D0B4009F2059 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		845E016E1E86DA9B009F2059 /* RecordDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordDetailViewController.h; sourceTree = "<group>"; };
+		845E016F1E86DA9B009F2059 /* RecordDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordDetailViewController.m; sourceTree = "<group>"; };
+		845E01721E86DDA7009F2059 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		845E01731E86DDA7009F2059 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +101,8 @@
 		82A908351E864BBF00876963 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
+				845E01711E86DD94009F2059 /* common */,
+				845E012C1E86BBAB009F2059 /* rererer */,
 				82BEA3BC1E868AE900CEEF79 /* Bridge.entitlements */,
 				82BEA3B71E86857E00CEEF79 /* Controller */,
 				82BEA3B61E86857900CEEF79 /* View */,
@@ -129,6 +148,9 @@
 		82BEA3B71E86857E00CEEF79 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				845E01231E86BB22009F2059 /* login */,
+				845E016D1E86DA61009F2059 /* detail */,
+				845E011D1E86A1CE009F2059 /* base */,
 				845E011C1E869F91009F2059 /* main */,
 				845E01191E869EB0009F2059 /* LeftMenuViewController.h */,
 				845E011A1E869EB0009F2059 /* LeftMenuViewController.m */,
@@ -141,8 +163,54 @@
 			children = (
 				845E01161E869C22009F2059 /* MainViewController.h */,
 				845E01171E869C22009F2059 /* MainViewController.m */,
+				845E016A1E86D0B4009F2059 /* MainTableViewCell.h */,
+				845E016B1E86D0B4009F2059 /* MainTableViewCell.m */,
 			);
 			name = main;
+			sourceTree = "<group>";
+		};
+		845E011D1E86A1CE009F2059 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				845E011E1E86A1DA009F2059 /* BaseViewController.h */,
+				845E011F1E86A1DA009F2059 /* BaseViewController.m */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		845E01231E86BB22009F2059 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				845E01271E86BB55009F2059 /* LoginViewController.h */,
+				845E01281E86BB55009F2059 /* LoginViewController.m */,
+				845E01291E86BB55009F2059 /* LoginViewController.xib */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		845E012C1E86BBAB009F2059 /* rererer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = rererer;
+			sourceTree = "<group>";
+		};
+		845E016D1E86DA61009F2059 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				845E016E1E86DA9B009F2059 /* RecordDetailViewController.h */,
+				845E016F1E86DA9B009F2059 /* RecordDetailViewController.m */,
+			);
+			name = detail;
+			sourceTree = "<group>";
+		};
+		845E01711E86DD94009F2059 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				845E01721E86DDA7009F2059 /* Utils.h */,
+				845E01731E86DDA7009F2059 /* Utils.m */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 		D2744430E00F9F28AAE94E0F /* Pods */ = {
@@ -192,7 +260,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -221,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845E012B1E86BB55009F2059 /* LoginViewController.xib in Resources */,
 				82A908461E864BBF00876963 /* LaunchScreen.storyboard in Resources */,
 				82A908431E864BBF00876963 /* Assets.xcassets in Resources */,
 				82A908411E864BBF00876963 /* Main.storyboard in Resources */,
@@ -282,11 +351,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845E012A1E86BB55009F2059 /* LoginViewController.m in Sources */,
+				845E01741E86DDA7009F2059 /* Utils.m in Sources */,
 				82BEA3BB1E8686EE00CEEF79 /* APIModel.m in Sources */,
 				82A9083E1E864BBF00876963 /* ViewController.m in Sources */,
+				845E016C1E86D0B4009F2059 /* MainTableViewCell.m in Sources */,
+				845E01701E86DA9B009F2059 /* RecordDetailViewController.m in Sources */,
 				82A9083B1E864BBF00876963 /* AppDelegate.m in Sources */,
 				845E01181E869C22009F2059 /* MainViewController.m in Sources */,
 				845E011B1E869EB0009F2059 /* LeftMenuViewController.m in Sources */,
+				845E01201E86A1DA009F2059 /* BaseViewController.m in Sources */,
 				82A908381E864BBF00876963 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +480,6 @@
 			baseConfigurationReference = 70383086423FECD7C2C13F9E /* Pods-Bridge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Bridge/Bridge.entitlements;
 				DEVELOPMENT_TEAM = 6ZKXF235KG;
 				INFOPLIST_FILE = Bridge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -421,7 +494,6 @@
 			baseConfigurationReference = 803AB0CDEE588460801FEB3B /* Pods-Bridge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Bridge/Bridge.entitlements;
 				DEVELOPMENT_TEAM = 6ZKXF235KG;
 				INFOPLIST_FILE = Bridge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
