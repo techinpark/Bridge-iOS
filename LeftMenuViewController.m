@@ -14,6 +14,10 @@
 #import "SlideNavigationContorllerAnimatorSlideAndFade.h"
 #import "LeftMenuTableViewCell.h"
 
+@interface LeftMenuViewController ()
+@property (strong, nonatomic) NSArray *arrMenuImage;
+@end
+
 @implementation LeftMenuViewController
 
 #pragma mark - UIViewController Methods -
@@ -21,25 +25,24 @@
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
 	self.slideOutAnimationEnabled = YES;
-	
 	return [super initWithCoder:aDecoder];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
 	[super viewDidLoad];
 	
 	self.tableView.separatorColor = [UIColor lightGrayColor];
 	
+    self.arrMenuImage = @[@"home", @"mine", @"money_call", @"money_send"];
+
 	//UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"menu"]];
 	//self.tableView.backgroundView = imageView;
 }
 
 #pragma mark - UITableView Delegate & Datasrouce -
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-	return 4;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return self.arrMenuImage.count;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -58,6 +61,7 @@
 {
 	LeftMenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"leftMenuCell"];
 
+    cell.menuImageView.image = [UIImage imageNamed:[self.arrMenuImage objectAtIndex:indexPath.row]];
     switch (indexPath.row) {
 		case 0:
 			cell.menuNameLabel.text = @"메인화면";
