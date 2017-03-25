@@ -25,6 +25,8 @@
     
     [self registerForRemoteNotifications];
     
+    [self setSlideMenu];
+    
     return YES;
 }
 
@@ -88,8 +90,7 @@
     }
 }
 
-- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
-{
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken {
     //  NSLog(@"My token is: %@", deviceToken);
     
     NSString* newToken = [[[NSString stringWithFormat:@"%@",deviceToken]
@@ -204,6 +205,15 @@
     return [defaults objectForKey:DEFAULTS_PUSH_DATA];
 }
 
+
+-(void)setSlideMenu {
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+        bundle: nil];
+    LeftMenuViewController *leftMenu = (LeftMenuViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"LeftMenuViewController"];
+    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
+    [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .18;
+
+}
 
 
 

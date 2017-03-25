@@ -14,6 +14,8 @@
 		82A908431E864BBF00876963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A908421E864BBF00876963 /* Assets.xcassets */; };
 		82A908461E864BBF00876963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A908441E864BBF00876963 /* LaunchScreen.storyboard */; };
 		82BEA3BB1E8686EE00CEEF79 /* APIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BEA3B91E8686EE00CEEF79 /* APIModel.m */; };
+		845E01181E869C22009F2059 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01171E869C22009F2059 /* MainViewController.m */; };
+		845E011B1E869EB0009F2059 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E011A1E869EB0009F2059 /* LeftMenuViewController.m */; };
 		87A02D57738F8368A272F170 /* libPods-Bridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,10 @@
 		82BEA3B91E8686EE00CEEF79 /* APIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIModel.m; path = Model/APIModel.m; sourceTree = SOURCE_ROOT; };
 		82BEA3BA1E8686EE00CEEF79 /* APIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIModel.h; path = Model/APIModel.h; sourceTree = SOURCE_ROOT; };
 		82BEA3BC1E868AE900CEEF79 /* Bridge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bridge.entitlements; sourceTree = "<group>"; };
+		845E01161E869C22009F2059 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		845E01171E869C22009F2059 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		845E01191E869EB0009F2059 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftMenuViewController.h; path = ../LeftMenuViewController.h; sourceTree = "<group>"; };
+		845E011A1E869EB0009F2059 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftMenuViewController.m; path = ../LeftMenuViewController.m; sourceTree = "<group>"; };
 		BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,8 +129,20 @@
 		82BEA3B71E86857E00CEEF79 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				845E011C1E869F91009F2059 /* main */,
+				845E01191E869EB0009F2059 /* LeftMenuViewController.h */,
+				845E011A1E869EB0009F2059 /* LeftMenuViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		845E011C1E869F91009F2059 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				845E01161E869C22009F2059 /* MainViewController.h */,
+				845E01171E869C22009F2059 /* MainViewController.m */,
+			);
+			name = main;
 			sourceTree = "<group>";
 		};
 		D2744430E00F9F28AAE94E0F /* Pods */ = {
@@ -170,7 +188,7 @@
 				TargetAttributes = {
 					82A908321E864BBF00876963 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = U6GQL8JQMT;
+						DevelopmentTeam = 6ZKXF235KG;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -224,7 +242,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8807D903C536221FF41F3F18 /* [CP] Copy Pods Resources */ = {
@@ -267,6 +285,8 @@
 				82BEA3BB1E8686EE00CEEF79 /* APIModel.m in Sources */,
 				82A9083E1E864BBF00876963 /* ViewController.m in Sources */,
 				82A9083B1E864BBF00876963 /* AppDelegate.m in Sources */,
+				845E01181E869C22009F2059 /* MainViewController.m in Sources */,
+				845E011B1E869EB0009F2059 /* LeftMenuViewController.m in Sources */,
 				82A908381E864BBF00876963 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,8 +407,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bridge/Bridge.entitlements;
-				DEVELOPMENT_TEAM = U6GQL8JQMT;
+				DEVELOPMENT_TEAM = 6ZKXF235KG;
 				INFOPLIST_FILE = Bridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmsae.Bridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -401,8 +422,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bridge/Bridge.entitlements;
-				DEVELOPMENT_TEAM = U6GQL8JQMT;
+				DEVELOPMENT_TEAM = 6ZKXF235KG;
 				INFOPLIST_FILE = Bridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmsae.Bridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";

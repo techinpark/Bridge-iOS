@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
+#import "SlideNavigationController.h"
+#import "LeftMenuViewController.h"
 #import "Define.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UNUserNotificationCenterDelegate>
 
