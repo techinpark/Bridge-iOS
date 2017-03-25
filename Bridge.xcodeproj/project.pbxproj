@@ -180,12 +180,11 @@
 		82BEA3B71E86857E00CEEF79 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
+
 				824F2F041E86F31500CD29AC /* push */,
-=======
 				845E01841E86FDCF009F2059 /* register */,
 				845E017E1E86F4FE009F2059 /* alram */,
->>>>>>> 9c49101e1d8ed0c9f405c316005de84005675c7f
+
 				845E01231E86BB22009F2059 /* login */,
 				845E016D1E86DA61009F2059 /* detail */,
 				845E011D1E86A1CE009F2059 /* base */,
