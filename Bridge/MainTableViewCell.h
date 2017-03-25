@@ -11,5 +11,8 @@
 
 @interface MainTableViewCell : SWTableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *coastLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *creditGradeImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *moneyTypeLabel;
 
 @end

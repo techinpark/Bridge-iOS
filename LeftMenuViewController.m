@@ -12,6 +12,7 @@
 #import "SlideNavigationContorllerAnimatorScale.h"
 #import "SlideNavigationContorllerAnimatorScaleAndFade.h"
 #import "SlideNavigationContorllerAnimatorSlideAndFade.h"
+#import "LeftMenuTableViewCell.h"
 
 @implementation LeftMenuViewController
 
@@ -30,8 +31,8 @@
 	
 	self.tableView.separatorColor = [UIColor lightGrayColor];
 	
-	UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"leftMenu.jpg"]];
-	self.tableView.backgroundView = imageView;
+	//UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"menu"]];
+	//self.tableView.backgroundView = imageView;
 }
 
 #pragma mark - UITableView Delegate & Datasrouce -
@@ -55,24 +56,20 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"leftMenuCell"];
-	
-	switch (indexPath.row)
-	{
+	LeftMenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"leftMenuCell"];
+
+    switch (indexPath.row) {
 		case 0:
-			cell.textLabel.text = @"Home";
+			cell.menuNameLabel.text = @"메인화면";
 			break;
-			
 		case 1:
-			cell.textLabel.text = @"Profile";
+			cell.menuNameLabel.text = @"받을 돈 요청하기";
 			break;
-			
 		case 2:
-			cell.textLabel.text = @"Friends";
+			cell.menuNameLabel.text = @"보낼 돈 요청하기";
 			break;
-			
 		case 3:
-			cell.textLabel.text = @"Sign Out";
+			cell.menuNameLabel.text = @"나의 거래내역 조회";
 			break;
 	}
 	
@@ -97,11 +94,9 @@
 		case 1:
 			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ProfileViewController"];
 			break;
-			
 		case 2:
 			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"FriendsViewController"];
 			break;
-			
 		case 3:
 			[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 			[[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
