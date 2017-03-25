@@ -13,9 +13,12 @@
 		82A908411E864BBF00876963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A9083F1E864BBF00876963 /* Main.storyboard */; };
 		82A908431E864BBF00876963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A908421E864BBF00876963 /* Assets.xcassets */; };
 		82A908461E864BBF00876963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A908441E864BBF00876963 /* LaunchScreen.storyboard */; };
+		87A02D57738F8368A272F170 /* libPods-Bridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70383086423FECD7C2C13F9E /* Pods-Bridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bridge/Pods-Bridge.debug.xcconfig"; sourceTree = "<group>"; };
+		803AB0CDEE588460801FEB3B /* Pods-Bridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bridge/Pods-Bridge.release.xcconfig"; sourceTree = "<group>"; };
 		82A908331E864BBF00876963 /* Bridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A908371E864BBF00876963 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82A908391E864BBF00876963 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		82A908421E864BBF00876963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82A908451E864BBF00876963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82A908471E864BBF00876963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A02D57738F8368A272F170 /* libPods-Bridge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42D9762507AE07A0D2DA329E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		82A9082A1E864BBF00876963 = {
 			isa = PBXGroup;
 			children = (
 				82A908351E864BBF00876963 /* Bridge */,
 				82A908341E864BBF00876963 /* Products */,
+				D2744430E00F9F28AAE94E0F /* Pods */,
+				42D9762507AE07A0D2DA329E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +94,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D2744430E00F9F28AAE94E0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70383086423FECD7C2C13F9E /* Pods-Bridge.debug.xcconfig */,
+				803AB0CDEE588460801FEB3B /* Pods-Bridge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82A9084A1E864BBF00876963 /* Build configuration list for PBXNativeTarget "Bridge" */;
 			buildPhases = (
+				05A5751E238D75D29E3CAF8D /* [CP] Check Pods Manifest.lock */,
 				82A9082F1E864BBF00876963 /* Sources */,
 				82A908301E864BBF00876963 /* Frameworks */,
 				82A908311E864BBF00876963 /* Resources */,
+				CBAED2DC5F26605947BF0B37 /* [CP] Embed Pods Frameworks */,
+				8807D903C536221FF41F3F18 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05A5751E238D75D29E3CAF8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8807D903C536221FF41F3F18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bridge/Pods-Bridge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBAED2DC5F26605947BF0B37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bridge/Pods-Bridge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82A9082F1E864BBF00876963 /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		82A9084B1E864BBF00876963 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70383086423FECD7C2C13F9E /* Pods-Bridge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U6GQL8JQMT;
@@ -281,6 +357,7 @@
 		};
 		82A9084C1E864BBF00876963 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 803AB0CDEE588460801FEB3B /* Pods-Bridge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U6GQL8JQMT;
