@@ -16,4 +16,13 @@
 
 -(NSDictionary *)request:(NSString *)api params:(NSDictionary *)params;
 
+-(NSDictionary *)moneyTransfer:(NSString *)me toUserid:(NSString *)toUserid money:(NSString *)money;
+-(NSDictionary *)moneyBalance:(NSString *)userId;
+-(NSDictionary *)moneyReceived:(NSString *)userId;
+-(NSDictionary *)moneyFromPending:(NSString *)userId;
+-(NSDictionary *)moneySentTo:(NSString *)userId;
+-(NSDictionary *)moneyPendingTo:(NSString *)userId;
+
+
+
 @end

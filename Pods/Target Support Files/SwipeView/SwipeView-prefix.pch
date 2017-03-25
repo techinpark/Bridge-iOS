@@ -1,5 +1,6 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
+<<<<<<< HEAD
 #else
 #ifndef FOUNDATION_EXPORT
 #if defined(__cplusplus)
@@ -8,5 +9,7 @@
 #define FOUNDATION_EXPORT extern
 #endif
 #endif
+=======
+>>>>>>> b2fc5d7b672c020bb3c263f526cabf0b7fbdb3c5
 #endif
 
