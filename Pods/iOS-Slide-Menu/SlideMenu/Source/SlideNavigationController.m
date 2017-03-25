@@ -326,34 +326,23 @@ static SlideNavigationController *singletonInstance;
 - (void)setEnableShadow:(BOOL)enable
 {
 	_enableShadow = enable;
-<<<<<<< HEAD
-	
-=======
 
-    //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:(41/255.0) green:(130/255.0) blue:(200/255.0) alpha:1.0f]];
-    
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.navigationController.view.backgroundColor = [UIColor clearColor];
-    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
-    [self.navigationController.navigationBar setBackgroundImage:nil
-    forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setShadowImage:[UIImage new]];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
 
->>>>>>> 9c49101e1d8ed0c9f405c316005de84005675c7f
 	if (enable)
 	{
-		self.view.layer.shadowColor = [UIColor darkGrayColor].CGColor;
-		self.view.layer.shadowRadius = MENU_SHADOW_RADIUS;
-		self.view.layer.shadowOpacity = MENU_SHADOW_OPACITY;
-		self.view.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.view.bounds].CGPath;
-		self.view.layer.shouldRasterize = YES;
-		self.view.layer.rasterizationScale = [UIScreen mainScreen].scale;
+	//	self.view.layer.shadowColor = [UIColor darkGrayColor].CGColor;
+	//	self.view.layer.shadowRadius = MENU_SHADOW_RADIUS;
+	//	self.view.layer.shadowOpacity = MENU_SHADOW_OPACITY;
+	//	self.view.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.view.bounds].CGPath;
+	//	self.view.layer.shouldRasterize = YES;
+	//	self.view.layer.rasterizationScale = [UIScreen mainScreen].scale;
 	}
 	else
 	{
-		self.view.layer.shadowOpacity = 0;
-		self.view.layer.shadowRadius = 0;
+	//	self.view.layer.shadowOpacity = 0;
+	//	self.view.layer.shadowRadius = 0;
 	}
 }
 
@@ -464,12 +453,13 @@ static SlideNavigationController *singletonInstance;
         
         UIButton *btnLeftNavi = [UIButton buttonWithType:UIButtonTypeCustom];
         btnLeftNavi.bounds = CGRectMake(5.0f, 0, 30.0f, 30.0f);
-        [btnLeftNavi addTarget:self action:@selector(toggleLeftMenu) forControlEvents:UIControlEventTouchUpInside];
+        //[btnLeftNavi addTarget:self action:@selector(toggleLeftMenu) forControlEvents:UIControlEventTouchUpInside];
         [btnLeftNavi setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
         [btnLeftNavi setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         UIBarButtonItem *barBtnLeftNavi = [[UIBarButtonItem alloc] initWithCustomView:btnLeftNavi];
+        
         return barBtnLeftNavi;
-        //self.navigationItem.leftBarButtonItem = barBtnLeftNavi;
+
 	}
 }
 

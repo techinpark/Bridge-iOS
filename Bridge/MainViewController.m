@@ -30,12 +30,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-<<<<<<< HEAD
-    self.arrRecordCoast = [[NSArray alloc] initWithObjects:@"76,000", @"55,000", @"35,000", @"40,000", @"50,000", nil];
-//    self.arrRecordCoast = [NSArray arrayWithObjects: ];
-
-    
-=======
 
     //title
     UIImageView *billyTitImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Billy"]];
@@ -48,9 +42,8 @@
     self.arrMoneyTypeName = @[@"동아리회비", @"더치페이", @"점심값", @"빌려준돈", @"책값"];
 
     [self.mainTV reloadData];
-
->>>>>>> 9c49101e1d8ed0c9f405c316005de84005675c7f
     [self setNavi];
+
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     self.swipeLineView.frame = CGRectMake(15.0f, self.swipeLineView.frame.origin.y, width/2.0 - 30.0f, 1.0);
     

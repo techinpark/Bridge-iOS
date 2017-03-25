@@ -283,7 +283,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MHP-Af-5jR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="-6" y="-10"/>
         </scene>
         <!--View Controller-->
@@ -333,7 +332,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJp-VS-3WO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="639.375" y="-10.56338028169014"/>
-=======
             <point key="canvasLocation" x="-83.200000000000003" y="-8.0959520239880067"/>
         </scene>
         <!--Record Detail View Controller-->

@@ -94,7 +94,6 @@
 		case 0:
 			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"HomeViewController"];
 			break;
-			
 		case 1:
 			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ProfileViewController"];
 			break;
