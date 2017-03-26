@@ -181,7 +181,16 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 - (void)test {
-    [self performSegueWithIdentifier:@"moveReceiveMoney" sender:self];
+    
+    UIViewController *vc ;
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+    
+
+    vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"RequestReceiveMoneyVC"];
+
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 

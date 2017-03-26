@@ -9,6 +9,8 @@
 #import "RequestSendingMoneyVC.h"
 
 @interface RequestSendingMoneyVC ()
+@property (nonatomic, strong) IBOutlet UIView *contentView;
+@property (nonatomic, strong) IBOutlet UIScrollView *mScrollView;
 
 @end
 
@@ -17,6 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationController.navigationBarHidden = YES;
+    
+    
+    
+    
+    [self.view addSubview:self.mScrollView];
+    
+    [self.mScrollView addSubview:self.contentView];
+    [self.mScrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.contentView.frame.size.height)];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +47,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)onBackButton:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    self.navigationController.navigationBarHidden = NO;
+}
 
 @end

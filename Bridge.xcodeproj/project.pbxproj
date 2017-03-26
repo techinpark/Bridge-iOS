@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		824917B21E87415E00B21C4C /* CALayer+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 824917B11E87415E00B21C4C /* CALayer+UIColor.m */; };
 		824F2F071E86F33600CD29AC /* PushRecivedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824F2F061E86F33600CD29AC /* PushRecivedViewController.m */; };
 		82A908381E864BBF00876963 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A908371E864BBF00876963 /* main.m */; };
 		82A9083B1E864BBF00876963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A9083A1E864BBF00876963 /* AppDelegate.m */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		70383086423FECD7C2C13F9E /* Pods-Bridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bridge/Pods-Bridge.debug.xcconfig"; sourceTree = "<group>"; };
 		803AB0CDEE588460801FEB3B /* Pods-Bridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bridge/Pods-Bridge.release.xcconfig"; sourceTree = "<group>"; };
+		824917B01E87415E00B21C4C /* CALayer+UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+UIColor.h"; sourceTree = "<group>"; };
+		824917B11E87415E00B21C4C /* CALayer+UIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+UIColor.m"; sourceTree = "<group>"; };
 		824F2F051E86F33600CD29AC /* PushRecivedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushRecivedViewController.h; sourceTree = "<group>"; };
 		824F2F061E86F33600CD29AC /* PushRecivedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushRecivedViewController.m; sourceTree = "<group>"; };
 		82A908331E864BBF00876963 /* Bridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,6 +262,8 @@
 			children = (
 				845E01721E86DDA7009F2059 /* Utils.h */,
 				845E01731E86DDA7009F2059 /* Utils.m */,
+				824917B01E87415E00B21C4C /* CALayer+UIColor.h */,
+				824917B11E87415E00B21C4C /* CALayer+UIColor.m */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -468,6 +473,7 @@
 				82A908381E864BBF00876963 /* main.m in Sources */,
 				845E01871E86FE80009F2059 /* AddReceiveMoneyVC.m in Sources */,
 				845E018E1E872552009F2059 /* RequestReceiveMoneyVC.m in Sources */,
+				824917B21E87415E00B21C4C /* CALayer+UIColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
