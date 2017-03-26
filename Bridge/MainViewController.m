@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "SlideNavigationController.h"
+#import "SendRequestViewController.h"
 #import "MainTableViewCell.h"
 #import "APIModel.h"
 
@@ -77,7 +78,7 @@
     button.titleLabel.textColor = [UIColor whiteColor];
     self.sendMoneyLabel.titleLabel.textColor = [UIColor colorWithRed:(255/255.0) green:(255/255.0) blue:(255/255.0) alpha:0.6];
 
-    self.totalCoastLabel.text = @"75,000원";
+    self.totalCoastLabel.text = @"256,000원";
     self.receiveMoneyPageYN = YES;
 
     [self setConditionAnimate:[UIColor colorWithRed:(41/255.0) green:(130/255.0) blue:(255/255.0) alpha:1.0f] duration:0.3];
@@ -125,12 +126,18 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MainTableViewCell"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [cell setRightUtilityButtons:[self rightButtons] WithButtonWidth:80.0f];
-    
+
     cell.coastLabel.text = [self.arrRecordCoast objectAtIndex:indexPath.row];
     cell.nameLabel.text = [self.arrNeedReceiveName objectAtIndex:indexPath.row];
     cell.moneyTypeLabel.text = [self.arrMoneyTypeName objectAtIndex:indexPath.row];
 
     if(indexPath.row == 0) {
+        cell.creditGradeImageView.hidden = NO;
+    } else if(indexPath.row == 2) {
+        cell.creditGradeImageView.image = [UIImage imageNamed:@"cooper"];
+        cell.creditGradeImageView.hidden = NO;
+    } else if(indexPath.row == 4) {
+        cell.creditGradeImageView.image = [UIImage imageNamed:@"silver"];
         cell.creditGradeImageView.hidden = NO;
     }
     /*NSMutableAttributedString *coast = [[NSMutableAttributedString alloc] initWithString:@"원"];
@@ -157,6 +164,13 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
 - (void)swipeableTableViewCell:(SWTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
+    NSLog(@"INDEX %ld", index);
+    if(self.receiveMoneyPageYN) {
+        
+    } else {
+        SendRequestViewController *sendRequestViewController = [[SendRequestViewController alloc] initWithNibName:@"SendRequestViewController" bundle:nil];
+        [self presentViewController:sendRequestViewController animated:YES completion:nil];
+    }
 }
 
 - (void)setNavi {

@@ -35,6 +35,10 @@
 		845E01911E87261B009F2059 /* RequestSendingMoneyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01901E87261B009F2059 /* RequestSendingMoneyVC.m */; };
 		845E01961E8726FB009F2059 /* MyTradeInquireVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01951E8726FB009F2059 /* MyTradeInquireVC.m */; };
 		845E01981E8727B6009F2059 /* SendRequestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E01971E8727B6009F2059 /* SendRequestView.xib */; };
+		845E019C1E872863009F2059 /* SendRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E019A1E872863009F2059 /* SendRequestViewController.m */; };
+		845E019D1E872863009F2059 /* SendRequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E019B1E872863009F2059 /* SendRequestViewController.xib */; };
+		845E01A21E8748FE009F2059 /* InputPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E01A01E8748FE009F2059 /* InputPasswordViewController.m */; };
+		845E01A31E8748FE009F2059 /* InputPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E01A11E8748FE009F2059 /* InputPasswordViewController.xib */; };
 		87A02D57738F8368A272F170 /* libPods-Bridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +94,12 @@
 		845E01941E8726FB009F2059 /* MyTradeInquireVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTradeInquireVC.h; sourceTree = "<group>"; };
 		845E01951E8726FB009F2059 /* MyTradeInquireVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTradeInquireVC.m; sourceTree = "<group>"; };
 		845E01971E8727B6009F2059 /* SendRequestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendRequestView.xib; sourceTree = "<group>"; };
+		845E01991E872863009F2059 /* SendRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendRequestViewController.h; sourceTree = "<group>"; };
+		845E019A1E872863009F2059 /* SendRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendRequestViewController.m; sourceTree = "<group>"; };
+		845E019B1E872863009F2059 /* SendRequestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendRequestViewController.xib; sourceTree = "<group>"; };
+		845E019F1E8748FE009F2059 /* InputPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputPasswordViewController.h; sourceTree = "<group>"; };
+		845E01A01E8748FE009F2059 /* InputPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputPasswordViewController.m; sourceTree = "<group>"; };
+		845E01A11E8748FE009F2059 /* InputPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputPasswordViewController.xib; sourceTree = "<group>"; };
 		BFA184712E0144DCAE2B16C8 /* libPods-Bridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,6 +135,9 @@
 		82A9082A1E864BBF00876963 = {
 			isa = PBXGroup;
 			children = (
+				845E01991E872863009F2059 /* SendRequestViewController.h */,
+				845E019A1E872863009F2059 /* SendRequestViewController.m */,
+				845E019B1E872863009F2059 /* SendRequestViewController.xib */,
 				845E01971E8727B6009F2059 /* SendRequestView.xib */,
 				845E01751E86EBA5009F2059 /* font */,
 				82A908351E864BBF00876963 /* Bridge */,
@@ -192,6 +205,7 @@
 		82BEA3B71E86857E00CEEF79 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				845E019E1E8748ED009F2059 /* password */,
 				845E018B1E8724D1009F2059 /* side menu */,
 				824F2F041E86F31500CD29AC /* push */,
 				845E01841E86FDCF009F2059 /* register */,
@@ -306,6 +320,16 @@
 			name = "side menu";
 			sourceTree = "<group>";
 		};
+		845E019E1E8748ED009F2059 /* password */ = {
+			isa = PBXGroup;
+			children = (
+				845E019F1E8748FE009F2059 /* InputPasswordViewController.h */,
+				845E01A01E8748FE009F2059 /* InputPasswordViewController.m */,
+				845E01A11E8748FE009F2059 /* InputPasswordViewController.xib */,
+			);
+			name = password;
+			sourceTree = "<group>";
+		};
 		D2744430E00F9F28AAE94E0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,11 +373,11 @@
 				TargetAttributes = {
 					82A908321E864BBF00876963 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = U6GQL8JQMT;
+						DevelopmentTeam = 6ZKXF235KG;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -384,6 +408,7 @@
 			files = (
 				845E017A1E86EBC3009F2059 /* Spoqa Han Sans Bold.ttf in Resources */,
 				845E017B1E86EBC3009F2059 /* Spoqa Han Sans Light.ttf in Resources */,
+				845E01A31E8748FE009F2059 /* InputPasswordViewController.xib in Resources */,
 				845E01981E8727B6009F2059 /* SendRequestView.xib in Resources */,
 				845E01831E86F513009F2059 /* AlaramViewController.xib in Resources */,
 				845E017C1E86EBC3009F2059 /* Spoqa Han Sans Regular.ttf in Resources */,
@@ -391,6 +416,7 @@
 				845E012B1E86BB55009F2059 /* LoginViewController.xib in Resources */,
 				82A908461E864BBF00876963 /* LaunchScreen.storyboard in Resources */,
 				82A908431E864BBF00876963 /* Assets.xcassets in Resources */,
+				845E019D1E872863009F2059 /* SendRequestViewController.xib in Resources */,
 				82A908411E864BBF00876963 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +477,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				845E012A1E86BB55009F2059 /* LoginViewController.m in Sources */,
+				845E019C1E872863009F2059 /* SendRequestViewController.m in Sources */,
+				845E01A21E8748FE009F2059 /* InputPasswordViewController.m in Sources */,
 				845E018A1E87160E009F2059 /* LeftMenuTableViewCell.m in Sources */,
 				845E01911E87261B009F2059 /* RequestSendingMoneyVC.m in Sources */,
 				845E01741E86DDA7009F2059 /* Utils.m in Sources */,
@@ -586,8 +614,7 @@
 			baseConfigurationReference = 70383086423FECD7C2C13F9E /* Pods-Bridge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Bridge/Bridge.entitlements;
-				DEVELOPMENT_TEAM = U6GQL8JQMT;
+				DEVELOPMENT_TEAM = 6ZKXF235KG;
 				INFOPLIST_FILE = Bridge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -601,8 +628,7 @@
 			baseConfigurationReference = 803AB0CDEE588460801FEB3B /* Pods-Bridge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Bridge/Bridge.entitlements;
-				DEVELOPMENT_TEAM = U6GQL8JQMT;
+				DEVELOPMENT_TEAM = 6ZKXF235KG;
 				INFOPLIST_FILE = Bridge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

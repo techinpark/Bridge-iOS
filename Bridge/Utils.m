@@ -9,5 +9,12 @@
 #import "Utils.h"
 
 @implementation Utils
-
++ (void)alertMessage:(NSString *)message {
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil
+                                                   message:message
+                                                  delegate:self
+                                         cancelButtonTitle:@"확인"
+                                         otherButtonTitles:nil, nil];
+    [alert show];
+}
 @end

@@ -109,10 +109,12 @@
 			//return;
 			break;
 	}
-	
-	[[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc
-															 withSlideOutAnimation:self.slideOutAnimationEnabled
-																	 andCompletion:nil];
+
+    [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc                                                                             withSlideOutAnimation:NO andCompletion:nil];
+
+	//[[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc
+															 //withSlideOutAnimation:self.slideOutAnimationEnabled
+																	 //andCompletion:nil];
 }
 
 @end
