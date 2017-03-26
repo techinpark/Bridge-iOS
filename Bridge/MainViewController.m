@@ -188,6 +188,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"INDEX %ld", index);
     if(self.receiveMoneyPageYN) {
         [Utils alertMessage:@"알림이 재전송되었습니다."];
+        [self.mainTV reloadData];
         //SendRequestViewController *sendRequestViewController = [[SendRequestViewController alloc] initWithNibName:@"SendRequestViewController" bundle:nil];
        //[self presentViewController:sendRequestViewController animated:YES completion:nil];
     } else {

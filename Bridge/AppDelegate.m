@@ -192,11 +192,9 @@
 }
 
 -(BOOL)isExistPushData {
-    
     if (nil != [self getPushData]) {
         return YES;
     }
-    
     return NO;
 }
 
