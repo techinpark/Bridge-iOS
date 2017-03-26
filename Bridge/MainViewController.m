@@ -9,8 +9,10 @@
 #import "MainViewController.h"
 #import "SlideNavigationController.h"
 #import "SendRequestViewController.h"
+#import "InputPasswordViewController.h"
 #import "MainTableViewCell.h"
 #import "APIModel.h"
+#import "Utils.h"
 
 @interface MainViewController () <SlideNavigationControllerDelegate, SWTableViewCellDelegate>
 @property (weak, nonatomic) IBOutlet UIView *headerView;
@@ -54,14 +56,19 @@
     NSLog(@"%@",result);
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self.mainTV reloadData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 - (IBAction)rightClick:(UIButton*)button {
+    [self.mainTV reloadData];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.receiveMoneyLabel.titleLabel.textColor = [UIColor colorWithRed:(255/255.0) green:(255/255.0) blue:(255/255.0) alpha:0.6];
 
-    self.totalCoastLabel.text = @"55,000원";
+    self.totalCoastLabel.text = @"255,000원";
     self.receiveMoneyPageYN = NO;
 
     [self setConditionAnimate:[UIColor colorWithRed:(70/255.0) green:(171/255.0) blue:(191/255.0) alpha:1.0f] duration:0.3];
@@ -75,6 +82,7 @@
 }
 
 - (IBAction)leftClick:(UIButton *)button {
+    [self.mainTV reloadData];
     button.titleLabel.textColor = [UIColor whiteColor];
     self.sendMoneyLabel.titleLabel.textColor = [UIColor colorWithRed:(255/255.0) green:(255/255.0) blue:(255/255.0) alpha:0.6];
 
@@ -116,7 +124,12 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"moveRecordVC" sender:self];
+    if(!self.receiveMoneyPageYN) {
+        SendRequestViewController *sendRequestViewController = [[SendRequestViewController alloc] initWithNibName:@"SendRequestViewController" bundle:nil];
+        [self presentViewController:sendRequestViewController animated:YES completion:nil];
+    }
+
+    //[self performSegueWithIdentifier:@"moveRecordVC" sender:self];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.arrRecordCoast.count;
@@ -149,9 +162,17 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     return cell;
 }
 
+//dollar
+
 - (NSArray *)rightButtons {
     NSMutableArray *rightUtilityButtons = [NSMutableArray new];
-    [rightUtilityButtons sw_addUtilityButtonWithColor:[UIColor colorWithRed:(240/255.0) green:(168/255.0) blue:(9/255.0) alpha:1.0f] icon:[UIImage imageNamed:@"alarm"]];
+    
+    if(self.receiveMoneyPageYN) {
+        [rightUtilityButtons sw_addUtilityButtonWithColor:[UIColor colorWithRed:(240/255.0) green:(168/255.0) blue:(9/255.0) alpha:1.0f] icon:[UIImage imageNamed:@"alarm"]];
+    } else {
+        [rightUtilityButtons sw_addUtilityButtonWithColor:[UIColor colorWithRed:(240/255.0) green:(168/255.0) blue:(9/255.0) alpha:1.0f] icon:[UIImage imageNamed:@"dollar"]];
+    }
+    
     return rightUtilityButtons;
 }
 - (BOOL)swipeableTableViewCell:(SWTableViewCell *)cell canSwipeToState:(SWCellState)state {
@@ -166,10 +187,12 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 - (void)swipeableTableViewCell:(SWTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
     NSLog(@"INDEX %ld", index);
     if(self.receiveMoneyPageYN) {
-        
+        [Utils alertMessage:@"알림이 재전송되었습니다."];
+        //SendRequestViewController *sendRequestViewController = [[SendRequestViewController alloc] initWithNibName:@"SendRequestViewController" bundle:nil];
+       //[self presentViewController:sendRequestViewController animated:YES completion:nil];
     } else {
-        SendRequestViewController *sendRequestViewController = [[SendRequestViewController alloc] initWithNibName:@"SendRequestViewController" bundle:nil];
-        [self presentViewController:sendRequestViewController animated:YES completion:nil];
+        InputPasswordViewController *inputPasswordViewController = [[InputPasswordViewController alloc] initWithNibName:@"InputPasswordViewController" bundle:nil];
+        [self presentViewController:inputPasswordViewController animated:YES completion:nil];
     }
 }
 
